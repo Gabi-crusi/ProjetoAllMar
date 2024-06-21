@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas de Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Reservas de Restaurante</h1>
+    <form id="reservaForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+        
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" required>
+        
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+        
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" required>
+        
+        <label for="quantidade">Quantidade de Pessoas:</label>
+        <input type="number" id="quantidade" required>
+        
+        <button type="submit">Adicionar Reserva</button>
+    </form>
+
+    <h2>Lista de Reservas</h2>
+    <table id="tabelaReservas">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Quantidade de Pessoas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Reservas serão adicionadas aqui -->
+        </tbody>
+    </table>
+
+    <button onclick="imprimirReservas()">Imprimir Reservas</button>
+
+    <script src="script.js"></script>
